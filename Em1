@@ -1,0 +1,9 @@
+Mov SI,1000H
+Mov DI,2000H
+Mov CX,0020H
+Back:Mov AX,[SI]
+Mov [DI],AX
+INC SI
+INC DI 
+DEC CX
+JNZ BACK 
